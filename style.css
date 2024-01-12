@@ -113,34 +113,71 @@ ul li a {
 .close-btn {
   display: none;
 }
-/*  */
-/* .slideInLeft {
-  -webkit-animation-name: slideInLeft;
-  animation-name: slideInLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  }
-  @-webkit-keyframes slideInLeft {
-  0% {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  visibility: visible;
-  }
-  100% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  }
-  }
-  @keyframes slideInLeft {
-  0% {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  visibility: visible;
-  }
-  100% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  }
-  }  */
+/* card */
+.icon-card {
+  position: absolute;
+  top: 35px;
+  left: 85px;
+}
+.iconcard {
+  position: absolute;
+  top: 53px;
+  left: 100px;
+}
+.cardtag {
+  position: relative;
+  top: 30px;
+  color: #3c6a36;
+}
+.cards {
+  border-style: double;
+  border-width: 8px;
+}
+.card-texts h5:hover {
+  color: #f6f466;
+}
+.cards:hover {
+  background-color: #3c6a36;
+  color: #fff;
+  border-color: #fff;
+}
+#card {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 120px;
+  margin-top: 180px;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 200, "opsz" 24;
+  font-size: 48px;
+}
+/* Vegetable */
+.card2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 170px 0;
+  padding-left: 25%;
+  gap: 50px;
+}
+.imgtext {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 400;
+  color: #3c6a36;
+  background-image: url(img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 450px;
+}
+.imgtext h2 {
+  font-weight: 700;
+  color: #927f4c;
+}
+.card-2 {
+  border: none;
+}
