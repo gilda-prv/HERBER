@@ -1,3 +1,66 @@
+/* loader */
+.loader {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin: 220px auto;
+  .logo {
+    width: 45%;
+    position: absolute;
+    left: 27.5%;
+    top: 27.5%;
+    img {
+      width: 100%;
+      z-index: 5;
+    }
+  }
+}
+.bounce1,
+.bounce2,
+.bounce3 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #3c6a36;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: spreadout 2.7s infinite ease-in-out;
+  animation: spreadout 2.7s infinite ease-in-out;
+}
+.bounce2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+.bounce3 {
+  -webkit-animation-delay: -1.8s;
+  animation-delay: -1.8s;
+}
+@-webkit-keyframes spreadout {
+  0% {
+    -webkit-transform: scale(0.3);
+  }
+  80% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes spreadout {
+  0% {
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+  80% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /* navbar */
 ul li a {
   margin-right: 30px;
@@ -126,7 +189,7 @@ ul li a {
 }
 .cardtag {
   position: relative;
-  top: 30px;
+  top: 27px;
   color: #3c6a36;
 }
 .cards {
@@ -180,4 +243,116 @@ ul li a {
 }
 .card-2 {
   border: none;
+}
+/* Approach */
+.Approach {
+  margin: 190px 0;
+}
+#section-background {
+  background-image: url(./img/bunch-fresh-carrots-ai-generated-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: scale(0.6);
+}
+.btntag {
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+.btntag:hover {
+  background-color: #eda407;
+  outline: none;
+  border: none;
+}
+/* Fruits */
+.Fruits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 170px 0;
+  padding-right: 25%;
+  gap: 50px;
+  direction: rtl;
+}
+.imgtexts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: #eda407;
+  background-image: url(img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 450px;
+}
+.imgtexts h2 {
+  font-weight: 700;
+  color: #3c6a36;
+}
+/* number */
+.number {
+  margin-bottom: 170px;
+}
+.tree {
+  filter: opacity(0.4);
+  filter: blur(6px);
+  filter: grayscale(40%);
+  height: 380px;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+  gap: 10px;
+}
+.icon span {
+  color: #eda407;
+  font-size: 60px;
+  margin-top: 20px;
+}
+.icon h2 {
+  font-size: 70px;
+  color: white;
+}
+.icon p {
+  font-size: 20px;
+  color: #fff;
+}
+/* media screen */
+@media screen and (max-width: 935px) {
+  .wrapper {
+    top: 38%;
+  }
+  .navbar-collapse {
+    height: 240px;
+  }
+  #card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 0 40px;
+    width: 476px;
+  }
+  .cardtag {
+    left: 125px;
+  }
+  .card2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-right: 130px;
+  }
+  .Fruits {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 120px;
+  }
+  .Approach {
+    padding: 0 50px;
+  }
 }
