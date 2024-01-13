@@ -1,4 +1,13 @@
 $(document).ready(function () {
+  // loader
+  // setTimeout(function () {
+  //   $(window).attr("location", "main.html");
+  // }, 1000);
+  // logo
+  $("#logo").click(function (e) {
+    e.preventDefault();
+    location.reload();
+  });
   // search-box
   $(".search-btn").click(function () {
     $(".wrapper").addClass("active");
