@@ -321,6 +321,55 @@ ul li a {
   font-size: 20px;
   color: #fff;
 }
+/* Comments */
+.Comments {
+  margin: 170px 0;
+}
+.profile {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.carousel-text {
+  margin-top: 160px;
+}
+.carousel-text p {
+  margin: 20px 0;
+  color: black;
+}
+.carousel-text h4 {
+  color: #3c6a36;
+}
+.carsouelimg {
+  background-image: url(img/bg-parallax-3.jpg);
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(0.4);
+  filter: blur(6px);
+  filter: grayscale(40%);
+}
+/* OurGallery */
+/* .ourcard {
+  color: #fff;
+  font-size: 40px;
+  margin: 110px 0;
+  display: none;
+}
+.ourcard span {
+  font-size: 70px;
+}
+.OurGallery-img:hover {
+  opacity: 0.75;
+}
+.ourcard:hover {
+  display: block;
+  color: #fff;
+  border: #3c6a36 5px double;
+} */
 /* media screen */
 @media screen and (max-width: 935px) {
   .wrapper {
@@ -354,5 +403,42 @@ ul li a {
   }
   .Approach {
     padding: 0 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .wrapper {
+    left: 100px;
+  }
+  #card {
+    gap: 20px;
+    width: 350px;
+  }
+  .iconcard {
+    left: 30px;
+  }
+  .icon-card {
+    left: 30px;
+  }
+  .cardtag {
+    left: 70px;
+    font-size: 18px;
+  }
+  .imgtext {
+    background-size: 180px;
+  }
+  .imgtext h2 {
+    font-size: 15px;
+  }
+  .imgtext p {
+    font-size: 15px;
+  }
+  .imgtexts {
+    background-size: 200px;
+  }
+  .imgtexts h2 {
+    font-size: 15px;
+  }
+  .imgtexts p {
+    font-size: 15px;
   }
 }
