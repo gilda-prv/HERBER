@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Salsa&display=swap");
 /* loader */
 .loader {
   width: 150px;
@@ -60,6 +61,13 @@
   100% {
     opacity: 0;
   }
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+h2 {
+  font-family: "Salsa", cursive;
 }
 /* navbar */
 ul li a {
@@ -352,24 +360,89 @@ ul li a {
   filter: blur(6px);
   filter: grayscale(40%);
 }
-/* OurGallery */
-/* .ourcard {
+/* Partners */
+.Partners {
+  margin: 170px 0;
+  background-color: #63b1597f;
+  height: 390px;
+}
+.Partners h2 {
+  margin: 70px 0;
+}
+.row2 img:hover {
   color: #fff;
-  font-size: 40px;
-  margin: 110px 0;
-  display: none;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 1.5ms all ease-out;
 }
-.ourcard span {
-  font-size: 70px;
-}
-.OurGallery-img:hover {
-  opacity: 0.75;
-}
-.ourcard:hover {
-  display: block;
+/* footer */
+.footers {
+  max-width: 90%;
   color: #fff;
-  border: #3c6a36 5px double;
-} */
+  padding-top: 50px;
+  margin: 0 auto;
+}
+.footer-p {
+  margin: 20px 0;
+  padding-right: 200px;
+  position: relative;
+  z-index: 1;
+  color: gray;
+}
+.footer-p:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  height: 1px;
+  width: 60%;
+  border-bottom: 1px solid gray;
+  margin-top: 10px;
+}
+.footerp {
+  margin: 20px 0;
+  color: gray;
+}
+.icontag {
+  font-size: 25px;
+  font-weight: 800;
+  padding-right: 20px;
+  color: gray;
+}
+.iconstag {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.iconstag i {
+  padding-right: 10px;
+  padding-left: 20px;
+}
+input[type="email"] {
+  width: 90%;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-top: 10px;
+  background-color: #41403e;
+}
+input[type="email"]::placeholder {
+  text-align: center;
+  color: #fff;
+}
+input[type="submit"] {
+  width: 90%;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 20px 0;
+  background-color: #fff;
+}
+input[type="submit"]::placeholder {
+  text-align: center;
+  color: #41403e;
+  text-transform: uppercase;
+}
 /* media screen */
 @media screen and (max-width: 935px) {
   .wrapper {
