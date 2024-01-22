@@ -443,6 +443,9 @@ input[type="submit"]::placeholder {
   color: #41403e;
   text-transform: uppercase;
 }
+.gallery {
+  width: 350px;
+}
 /* media screen */
 @media screen and (max-width: 935px) {
   .wrapper {
@@ -513,5 +516,24 @@ input[type="submit"]::placeholder {
   }
   .imgtexts p {
     font-size: 15px;
+  }
+  .gallery {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+  .Partners {
+    height: 495px;
+  }
+  .Partners h2 {
+    margin: 15px 0;
+  }
+  .row2 img {
+    max-width: 200px;
+  }
+  .icon {
+    margin-bottom: 15px;
+  }
+  .icon h2 {
+    font-size: 35px;
   }
 }
